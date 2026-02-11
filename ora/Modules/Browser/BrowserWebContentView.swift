@@ -62,5 +62,8 @@ struct BrowserWebContentView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
+        .background(theme.background)
+        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+        .padding(5)
     }
 }

@@ -16,7 +16,8 @@ struct WindowControls: View {
                 WindowControlButton(type: .minimize, isHovered: $isHovered)
                 WindowControlButton(type: .zoom, isHovered: $isHovered)
             }
-            .padding(.horizontal, 8)
+            .padding(.leading, 16)
+            .padding(.top, 16)
             .onHover { hovering in
                 withAnimation(.easeInOut(duration: 0.1)) {
                     isHovered = hovering

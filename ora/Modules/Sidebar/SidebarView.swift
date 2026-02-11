@@ -59,7 +59,8 @@ struct SidebarView: View {
                     selectedContainer: container.name,
                     containers: containers
                 )
-                .padding(.horizontal, 10)
+                .padding(.leading, 14)
+                .padding(.trailing, 9)
                 .environmentObject(tabManager)
                 .environmentObject(historyManager)
                 .environmentObject(downloadManager)
